@@ -1,26 +1,11 @@
 {
-  "name": "python",
-  "description": "Installs Python, pip and virtualenv. Includes LWRPs for managing Python packages with `pip` and `virtualenv` isolated Python environments.",
-  "long_description": "",
   "maintainer": "Opscode, Inc.",
+  "replacing": {
+  },
+  "attributes": {
+  },
   "maintainer_email": "cookbooks@opscode.com",
-  "license": "Apache 2.0",
-  "platforms": {
-    "debian": [
-
-    ],
-    "ubuntu": [
-
-    ],
-    "centos": [
-
-    ],
-    "redhat": [
-
-    ],
-    "fedora": [
-
-    ]
+  "groupings": {
   },
   "dependencies": {
     "build-essential": [
@@ -29,24 +14,39 @@
   },
   "recommendations": {
   },
-  "suggestions": {
-  },
-  "conflicting": {
-  },
-  "providing": {
-  },
-  "replacing": {
-  },
-  "attributes": {
-  },
-  "groupings": {
-  },
   "recipes": {
-    "python": "Installs python, pip, and virtualenv",
-    "python::package": "Installs python using packages.",
     "python::source": "Installs python from source.",
+    "python::package": "Installs python using packages.",
     "python::pip": "Installs pip from source.",
+    "python": "Installs python, pip, and virtualenv",
     "python::virtualenv": "Installs virtualenv using the python_pip resource."
   },
-  "version": "1.0.2"
+  "suggestions": {
+  },
+  "license": "Apache 2.0",
+  "platforms": {
+    "debian": [
+
+    ],
+    "fedora": [
+
+    ],
+    "centos": [
+
+    ],
+    "ubuntu": [
+
+    ],
+    "redhat": [
+
+    ]
+  },
+  "version": "1.0.2",
+  "conflicting": {
+  },
+  "name": "python",
+  "long_description": "",
+  "providing": {
+  },
+  "description": "Installs Python, pip and virtualenv. Includes LWRPs for managing Python packages with `pip` and `virtualenv` isolated Python environments."
 }
