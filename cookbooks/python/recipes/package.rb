@@ -20,13 +20,20 @@
 
 python_pkgs = value_for_platform(
   ["debian","ubuntu"] => {
-    "default" => ["python","python-dev"]
+    "default" => ["python2.7","python-dev"]
   },
   ["centos","redhat","fedora"] => {
     "default" => ["python26","python26-devel"]
   },
   "default" => ["python","python-dev"]
 )
+
+package "python-software-properties"
+bash 'add-ppa' do
+	code <<-EOH
+	add-apt-repository ppa:fkrull/deadsnakes
+	EOH
+end
 
 python_pkgs.each do |pkg|
   package pkg do
