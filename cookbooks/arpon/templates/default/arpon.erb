@@ -1,0 +1,16 @@
+# Defaults for arpon initscript
+# sourced by /etc/init.d/arpon
+# installed at /etc/default/arpon by the maintainer scripts
+
+
+# You must choose between static ARP inspection (SARPI) and
+# dynamic ARP inspection (DARPI)
+#
+# For SARPI uncomment the following line
+# DAEMON_OPTS="-d -f /var/log/arpon/arpon.log -g -s"
+
+# For DARPI uncomment the following line
+DAEMON_OPTS="-d -f /var/log/arpon/arpon.log -g -y"
+
+# Modify to RUN="yes" when you are ready
+RUN="yes"
