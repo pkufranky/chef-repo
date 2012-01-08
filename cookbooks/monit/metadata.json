@@ -1,0 +1,65 @@
+{
+  "dependencies": {
+  },
+  "name": "monit",
+  "maintainer_email": "apsoto@gmail.com",
+  "attributes": {
+    "monit/poll_period": {
+      "required": "recommended",
+      "calculated": false,
+      "choice": [
+
+      ],
+      "type": "string",
+      "recipes": [
+
+      ],
+      "description": "How often to perform checks (in seconds)"
+    },
+    "monit/notify_email": {
+      "required": "recommended",
+      "calculated": false,
+      "choice": [
+
+      ],
+      "type": "string",
+      "recipes": [
+
+      ],
+      "description": "The email address to send alerts to."
+    },
+    "monit/poll_start_delay": {
+      "required": "recommended",
+      "calculated": false,
+      "choice": [
+
+      ],
+      "type": "string",
+      "recipes": [
+
+      ],
+      "description": "When monit first starts, how long to delay before it starts performing checks"
+    }
+  },
+  "license": "Apache 2.0",
+  "suggestions": {
+  },
+  "platforms": {
+  },
+  "maintainer": "Alex Soto",
+  "long_description": "# Overview #\nChef cookbook for the [monit](http://mmonit.com/monit/) monitoring and\nmanagement tool.\n\n# How to add to your cookbook repository #\n\n## Download the tarball ##\nIt's up on the opscode\n[cookbook community](http://community.opscode.com/cookbooks/monit) site.\n\n## Vendor via knife ##\n\n    $ knife cookbook site download monit\n\n## Track upstream changes via git ##\nThis is what I use for my chef repos so I can push/pull changes with minimal\nhassle.\n\nI use the subtree merge strategy explained in the\n[Pro Git](http://progit.org/book/ch6-7.html) book.\n\n#### Track the monit repo ####\n    $ cd YOUR_REPO_ROOT\n    $ git remote add chef-monit-remote git://github.com/apsoto/chef-monit.git\n    $ git fetch chef-monit-remote\n    $ git checkout -b chef-monit-upstream chef-monit-remote/master\n    $ git checkout master\n    $ git read-tree --prefix=cookbooks/monit -u chef-monit-upstream\n\n#### Pull in upstream changes ####\n    $ git checkout chef-monit-upstream\n    $ git pull\n    $ git checkout master\n    $ git merge --squash -s subtree --no-commit chef-monit-upstream\n\nHistory\n=======\n\nversion 0.6\n-----------\n * Released to github\n * Defaults no alert on ACTION event.\n   When you manually stop/start a service, alerting me about what I just did isn't useful.\n\n",
+  "version": "0.6.0",
+  "recommendations": {
+  },
+  "recipes": {
+  },
+  "groupings": {
+  },
+  "conflicting": {
+  },
+  "replacing": {
+  },
+  "description": "Configures monit.  Originally based off the 37 Signals Cookbook.",
+  "providing": {
+  }
+}
