@@ -1,0 +1,23 @@
+{
+  "id": "webapi",
+  "server_roles": [
+    "webapi"
+  ],
+  "type": {
+    "webapi": [
+      "packages"
+    ]
+  },
+  "packages": {
+    "php5-mysql": "",
+    "php5-imagick": "",
+    "smarty": ""
+  },
+  "pears": {
+    "mongo": ""
+  },
+  "gems": {
+    "rb-inotify": "",
+    "compass": ""
+  }
+}
