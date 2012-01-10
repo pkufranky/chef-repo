@@ -18,6 +18,7 @@
   },
   "gems": {
     "rb-inotify": "",
-    "compass": ""
+    "compass": "",
+    "request-log-analyzer": ""
   }
 }
