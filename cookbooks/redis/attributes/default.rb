@@ -9,6 +9,7 @@ default[:redis][:client_timeout] = "300"
 default[:redis][:glueoutputbuf]  = "yes"
 
 default[:redis][:install_url]    = 'http://redis.googlecode.com/files/redis-2.0.2.tar.gz'
+default[:redis][:version]    = '2.0.2'
 
 default[:redis][:saves] = [["900", "1"], ["300", "10"], ["60", "10000"]]
 
