@@ -28,7 +28,15 @@ user node['redis2']['user'] do
   system true
 end
 
-[node['redis2']['pid_dir'], node['redis2']['conf_dir'], node['redis2']['log_dir'], node['redis2']['instances']['default']['data_dir']].each do |dir|
+[node['redis2']['conf_dir']].each do |dir|
+  directory dir do
+    owner "root"
+    group "root"
+    mode "0755"
+    recursive true
+  end
+end
+[node['redis2']['pid_dir'], node['redis2']['log_dir'], node['redis2']['instances']['default']['data_dir']].each do |dir|
   directory dir do
     owner node['redis2']['user']
     mode "0750"
