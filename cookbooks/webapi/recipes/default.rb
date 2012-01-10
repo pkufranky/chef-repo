@@ -7,6 +7,7 @@
 # All rights reserved - Do Not Redistribute
 #
 
+include_recipe "redis-client::predis"
 template "/etc/php5/conf.d/mongo.ini" do
 	source "mongo.ini.erb"
 	owner "root"
