@@ -11,6 +11,7 @@
   "packages": {
     "php5-mysql": "",
     "php5-imagick": "",
+    "php5-gd": "",
     "smarty": "",
 	"nfs-client": ""
   },
