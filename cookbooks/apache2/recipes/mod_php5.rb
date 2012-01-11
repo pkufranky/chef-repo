@@ -48,7 +48,7 @@ when "redhat", "centos", "scientific"
   # replace with debian style config
   template "#{node[:apache][:dir]}/mods-available/php5.conf" do
     source "mods/php5.conf.erb" 
-    notifies :restart, "service[apache2]"
+    notifies :reload, "service[apache2]"
   end
 
 when "fedora"
@@ -66,7 +66,7 @@ when "fedora"
   # replace with debian style config
   template "#{node[:apache][:dir]}/mods-available/php5.conf" do
     source "mods/php5.conf.erb" 
-    notifies :restart, "service[apache2]"
+    notifies :reload, "service[apache2]"
   end
 end
 

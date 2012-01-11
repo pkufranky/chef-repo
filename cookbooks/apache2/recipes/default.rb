@@ -165,7 +165,7 @@ template "apache2.conf" do
   owner "root"
   group node[:apache][:root_group]
   mode 0644
-  notifies :restart, resources(:service => "apache2")
+  notifies :reload, resources(:service => "apache2")
 end
 
 template "security" do
@@ -175,7 +175,7 @@ template "security" do
   group node[:apache][:root_group]
   mode 0644
   backup false
-  notifies :restart, resources(:service => "apache2")
+  notifies :reload, resources(:service => "apache2")
 end
 
 template "charset" do
@@ -185,7 +185,7 @@ template "charset" do
   group node[:apache][:root_group]
   mode 0644
   backup false
-  notifies :restart, resources(:service => "apache2")
+  notifies :reload, resources(:service => "apache2")
 end
 
 template "#{node[:apache][:dir]}/ports.conf" do
@@ -194,7 +194,7 @@ template "#{node[:apache][:dir]}/ports.conf" do
   group node[:apache][:root_group]
   variables :apache_listen_ports => node[:apache][:listen_ports].map{|p| p.to_i}.uniq
   mode 0644
-  notifies :restart, resources(:service => "apache2")
+  notifies :reload, resources(:service => "apache2")
 end
 
 template "#{node[:apache][:dir]}/sites-available/default" do
@@ -202,7 +202,7 @@ template "#{node[:apache][:dir]}/sites-available/default" do
   owner "root"
   group node[:apache][:root_group]
   mode 0644
-  notifies :restart, resources(:service => "apache2")
+  notifies :reload, resources(:service => "apache2")
 end
 
 node['apache']['default_modules'].each do |mod|
