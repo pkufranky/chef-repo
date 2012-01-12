@@ -7,6 +7,9 @@
 # All rights reserved - Do Not Redistribute
 #
 
+if node[:kernel][:machine] =~ /x86_64/
+	package "ia32-libs"
+end
 include_recipe "redis-client::predis"
 template "/etc/php5/conf.d/mongo.ini" do
 	source "mongo.ini.erb"
