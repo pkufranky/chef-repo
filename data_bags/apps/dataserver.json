@@ -1,0 +1,18 @@
+{
+  "id": "dataserver",
+  "server_roles": [
+    "dataserver"
+  ],
+  "type": {
+    "dataserver": [
+      "packages"
+    ]
+  },
+  "packages": {
+  },
+  "pears": {
+  },
+  "gems": {
+    "request-log-analyzer": ""
+  }
+}
