@@ -1,11 +1,31 @@
-backend default {
-        .host = "localhost";
-        .port = "8080";
+backend thumb {
+        .host = "192.168.0.31";
+        .port = "80";
 }
 
+backend img {
+        .host = "192.168.0.21";
+        .port = "80";
+}
+
+sub vcl_recv {
+        unset req.http.Cookie;
+        if (req.http.host ~ "^thumb.wowpad.cn$") {
+                set req.backend = thumb;
+        }
+        elsif (req.http.host ~ "^img.wowpad.cn$") {
+                set req.backend = img;
+        }
+        else { 
+                error 404 "Unknown virtual host";
+        }
+}
 sub vcl_fetch {
         # force minimum ttl of 120 seconds
-        if (obj.ttl < 120s) {
-                set obj.ttl = 120s;
+        if (beresp.ttl < 120s) {
+                set beresp.ttl = 120s;
+        }
+        if (beresp.http.Set-Cookie) {
+                return(deliver);
         }
 }
