@@ -7,6 +7,7 @@ run_list(
   "recipe[apt]",
   "recipe[git]",
   "recipe[build-essential]",
+  "recipe[lrzsz]",
   "recipe[ssh_known_hosts]"
 )
 override_attributes(
