@@ -5,6 +5,6 @@ run_list(
   'recipe[user::data_bag]'
 )
 override_attributes(
-  :users => ["himalayas"],
+  :users => ["himalayas", "www-data"],
   :user => {:ssh_keygen => false}
 )
