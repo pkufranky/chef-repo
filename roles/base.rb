@@ -8,6 +8,7 @@ run_list(
   "recipe[git]",
   "recipe[build-essential]",
   "recipe[lrzsz]",
+  "recipe[exuberant-ctags]",
   "recipe[ssh_known_hosts]"
 )
 override_attributes(
