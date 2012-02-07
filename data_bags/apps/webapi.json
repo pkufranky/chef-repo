@@ -12,6 +12,7 @@
     "php5-mysql": "",
     "php5-imagick": "",
     "php5-gd": "",
+    "php5-curl": "",
     "smarty": "",
 	"nfs-client": ""
   },
