@@ -4,7 +4,7 @@
 DAEMON="<%= @daemon_path %>"
 NAME="<%= @name %>"
 
-DAEMON_OPTS=""
+DAEMON_OPTS="--rest"
 
 <%= @port ? "DAEMON_OPTS=\"$DAEMON_OPTS --port #{@port}\"" : "" %>
 <%= @dbpath ? "DAEMON_OPTS=\"$DAEMON_OPTS --dbpath #{@dbpath}\"" : "" %>
