@@ -14,7 +14,8 @@
     "php5-gd": "",
     "php5-curl": "",
     "smarty": "",
-	"nfs-client": ""
+	"nfs-client": "",
+	"python-libxml2": ""
   },
   "pears": {
     "mongo": ""
@@ -23,5 +24,14 @@
     "rb-inotify": "",
     "compass": "",
     "request-log-analyzer": ""
+  },
+  "pips": {
+    "pika": "",
+    "pymongo": "",
+    "pyyaml": "",
+    "sqlalchemy": "",
+    "egenix-mx-base": "",
+    "PIL": "",
+    "mysql-python": ""
   }
 }
