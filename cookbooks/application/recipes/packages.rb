@@ -36,7 +36,6 @@ if app['pips']
   app['pips'].each do |pip,ver|
     python_pip pip do
       version ver if ver && ver.length > 0
-      virtualenv ve.path
       action :install
     end
   end
