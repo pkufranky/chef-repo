@@ -7,7 +7,7 @@ run_list(
 override_attributes(
 	:mongodb2 => {
 		:logpath => '/var/log/mongodb2',
-		:dbpath => '/var/lib/mongodb2',
+		:dbpath => '/datafast/mongodb2',
 		:port => 27018
 	}
 )

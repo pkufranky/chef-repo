@@ -5,6 +5,9 @@ run_list(
   'recipe[mongodb::replicaset]'
 )
 override_attributes(
-	:mongodb => {:cluster_name => 'default'}
+	:mongodb => {
+		:cluster_name => 'default',
+		:dbpath => '/datafast/mongodb',
+	}
 )
 
