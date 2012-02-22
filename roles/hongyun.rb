@@ -7,5 +7,6 @@ run_list(
 )
 override_attributes(
   :users => ["himalayas"],
-  :user => {:ssh_keygen => false}
+  :user => {:ssh_keygen => false},
+  :mysql => {:server_root_password => 'letoueee168'}
 )
