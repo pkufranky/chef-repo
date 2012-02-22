@@ -11,4 +11,5 @@ package "gdb"
 package "socat"
 package "ack-grep"
 package "sysstat"
+package "byobu"
 
