@@ -12,4 +12,5 @@ package "socat"
 package "ack-grep"
 package "sysstat"
 package "byobu"
+package "aptitude"
 
