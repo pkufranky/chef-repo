@@ -1,0 +1,7 @@
+{
+	"id": "wplong",
+	"ssh_keys": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCrY3kqa7pVta+o3Ff6na99BVYt91lVxsSp9rN86KM3r2XQbybFQkoeA09g69gxSG9/TDSly9JtqQICj8Up/dvYyqFxMBEpqCxw3NhNgmWF2dw/3C+eacgtE7L3tW8cDK0O43b2+k0+natF6IKU+yl++Astm7uhBpI4QkilTy8Gf2dyCJ0Yfn0a0fmoeKml1iS8TddsMv6JqsAeOOhwKSnGobcEM3kAXgf2TvDGpygATRS+itgE+Co0FpMl8B/JknkgcD7Mhg0BLG3lgZXPI7evycOdhllrVdL3+57zlAbxBGWKi8dE6ALmOF13ZV2SCWM1r2JP1st/Z56pk2UebEW9 wplong",
+	"groups": "sysadmin",
+	"uid": 2001,
+	"shell": "/bin/bash"
+}
