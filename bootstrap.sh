@@ -21,10 +21,11 @@ user=${3:-ping}
 test -z "$2" && usage
 
 
-echo knife bootstrap $ip -N $node -r 'recipe[chef-client]' -x $user --sudo
-knife bootstrap $ip -N $node -r 'recipe[chef-client]' -x $user --sudo
+echo knife bootstrap $ip -N $node -r 'recipe[chef-client],role[base]' -x $user --sudo
+knife bootstrap $ip -N $node -r 'recipe[chef-client],role[base]' -x $user --sudo
 
 #knife bootstrap dog -r 'recipe[chef-client]' -x root
 #knife bootstrap web -r 'recipe[chef-client]' -x ping --sudo
+#knife bootstrap web -r 'recipe[chef-client]' -x ping --sudo -P 123456
 
 
