@@ -13,10 +13,20 @@ web_app "api.wowpad.cn" do
 	server_aliases ["stage.api.wowpad.cn"]
 	docroot "/srv/letou/api/api-facade"
 end
+web_app "360.wowpad.cn" do
+	server_name "360.wowpad.cn"
+	server_aliases ["stage.360.wowpad.cn"]
+	docroot "/srv/letou/searchapi_360/search"
+end
 web_app "s.wowpad.cn" do
 	server_name "s.wowpad.cn"
 	server_aliases ["stage.s.wowpad.cn"]
-	docroot "/srv/letou/searchapi_wandoujia"
+	docroot "/srv/letou/searchapi_wandoujia/search"
+end
+web_app "m.ee168.cn" do
+	server_name "m.ee168.cn"
+	server_aliases ["stage.m.ee168.cn"]
+	docroot "/srv/letou/searchapi/search"
 end
 web_app "api-s.wowpad.cn" do
 	server_name "api-s.wowpad.cn"
