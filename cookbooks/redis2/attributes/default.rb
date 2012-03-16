@@ -9,6 +9,8 @@ default['redis2']['instances']['default']['timeout'] = 300
 default['redis2']['instances']['default']['dumpdb_filename'] = "dump.rdb"
 default['redis2']['instances']['default']['data_dir'] = "/var/lib/redis"
 default['redis2']['instances']['default']['activerehashing'] = "yes" # no to disable, yes to enable
+default['redis2']['instances']['default']['loglevel'] = "notice" # debug,verbose,notice,warning
+default['redis2']['instances']['default']['syslog_enabled'] = "no" # yes/no
 default['redis2']['instances']['default']['databases'] = 16
 
 default['redis2']['instances']['default']['appendonly'] = "no"

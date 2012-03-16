@@ -38,6 +38,12 @@ attribute "redis/instances/default/activerehashing",
   :display_name => "Rehash redis table in memory",
   :description => "Active rehashing uses 1 millisecond every 100 milliseconds of CPU time in order to help rehashing the main Redis hash table (the one mapping top-level keys to values). The hash table implementation redis uses (see dict.c) performs a lazy rehashing: the more operations you run into an hash table that is rehashing, the more rehashing \"steps\" are performed, so if the server is idle the rehashing is never complete and some more memory is used by the hash table.takes about 1ms every 100ms",
   :default => "yes"
+attribute "redis/instances/default/loglevel",
+  :display_name => "log level",
+  :default => "notice"
+attribute "redis/instances/default/syslog_enabled",
+  :display_name => "whether to enable syslog",
+  :default => "no"
 attribute "redis/instances/default/databases", 
   :display_name => "Number of Redis database",
   :default => "16"
