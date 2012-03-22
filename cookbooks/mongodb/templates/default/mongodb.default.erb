@@ -19,3 +19,5 @@ DAEMON_OPTS="--rest"
 <% if @replicaset_name %>
 DAEMON_OPTS="$DAEMON_OPTS --replSet <%= @replicaset_name %>"
 <% end %>
+
+ulimit -n 5120
