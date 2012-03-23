@@ -9,9 +9,11 @@ usage() {
 }
 
 USAGE="USAGE:
-	$0 ip node
+	$0 ip node [user [passwd]]
 EXAMPLE:
 	$0 10.6.0.1 gate
+	$0 10.6.0.1 gate ping
+	$0 10.6.0.1 gate ping 123456
 "
 
 ip=$1
