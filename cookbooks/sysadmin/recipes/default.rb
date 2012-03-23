@@ -13,4 +13,5 @@ package "ack-grep"
 package "sysstat"
 package "byobu"
 package "aptitude"
+package "bash-completion"
 
