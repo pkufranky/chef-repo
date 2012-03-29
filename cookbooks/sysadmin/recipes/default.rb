@@ -14,4 +14,5 @@ package "sysstat"
 package "byobu"
 package "aptitude"
 package "bash-completion"
+package 'ntp'
 
