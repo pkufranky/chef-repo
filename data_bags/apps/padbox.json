@@ -1,0 +1,32 @@
+{
+  "id": "padbox",
+  "server_roles": [
+    "padbox"
+  ],
+  "type": {
+    "padbox": [
+      "packages"
+    ]
+  },
+  "packages": {
+    "php5-mysql": "",
+    "php5-imagick": "",
+    "php5-gd": "",
+    "php5-curl": "",
+    "smarty": "",
+	"nfs-client": ""
+  },
+  "pears": {
+    "mongo": ""
+  },
+  "gems": {
+    "rb-inotify": "",
+    "compass": "",
+    "request-log-analyzer": ""
+  },
+  "pips": {
+    "pyyaml": "",
+    "sqlalchemy": "",
+    "mysql-python": ""
+  }
+}
